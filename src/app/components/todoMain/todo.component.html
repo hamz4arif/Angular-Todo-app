@@ -1,0 +1,10 @@
+
+<h2 class="text-center text-success">Todo Main Component</h2>
+<div class="todos">
+    <div *ngIf='todos[1]'>
+
+        {{todos[1].content}}
+    </div>
+ <app-todoinput [todos]="todos"></app-todoinput>
+ <app-todolist [todos]="todos"></app-todolist>
+</div>

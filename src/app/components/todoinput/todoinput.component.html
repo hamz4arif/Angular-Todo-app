@@ -1,0 +1,14 @@
+
+<h1 class="text-center text-success">Input Component</h1>
+<form (submit)="addtodo()"> 
+    <input
+      type="text"
+      name="inputTod"
+      placeholder="Enter Todo"
+      class="todo-input"
+      [(ngModel)]="inputTodo"
+    />
+
+    <input type="submit" value="Add Todo" class="todo-submit">
+  </form>
+ 

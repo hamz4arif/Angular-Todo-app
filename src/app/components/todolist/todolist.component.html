@@ -1,0 +1,9 @@
+<h1 class="text-center text-success">LIst Component</h1>
+<div
+  *ngFor="let todo of todos; let i = index" 
+  class="todo {{ todo.completed ? 'done' : '' }}"
+>
+    <div class="id">{{ i + 1 }}</div>
+    <div (click)="toggleDone(i)" class="content">{{ todo.content }}</div>
+    <button (click)="remove(i)" class="delete btn btn-danger">Remove</button>
+</div>
